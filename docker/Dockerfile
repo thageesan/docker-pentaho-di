@@ -2,9 +2,7 @@ FROM java:jre
 
 MAINTAINER Thageesan Thanabalasingam
 
-ENV PDI_RELEASE=8.3 \
-    PDI_VERSION=8.3.0.0-371 \
-    PDI_HOME=/opt/pentaho-di \
+ENV PDI_HOME=/opt/pentaho-di \
     KETTLE_HOME=/pentaho-di
 
 COPY data-integration.zip /tmp/
