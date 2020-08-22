@@ -1,4 +1,4 @@
-FROM java:jre
+FROM java/jre:8-zulu-ubuntu-18.04
 
 MAINTAINER Thageesan Thanabalasingam
 
