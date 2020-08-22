@@ -1,4 +1,4 @@
-FROM java/jre:8-zulu-ubuntu-18.04
+FROM openjdk:8-jre
 
 MAINTAINER Thageesan Thanabalasingam
 
