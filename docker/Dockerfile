@@ -5,10 +5,7 @@ MAINTAINER Thageesan Thanabalasingam
 ENV PDI_HOME=/opt/pentaho-di \
     KETTLE_HOME=/pentaho-di
 
-COPY data-integration.zip /tmp/
-
-RUN unzip -q /tmp/data-integration.zip -d $PDI_HOME && \
-    rm /tmp/data-integration.zip
+ADD data-integration.tar.gz ${PDI_HOME}
 
 ENV PATH=$PDI_HOME/data-integration:$PATH
 
